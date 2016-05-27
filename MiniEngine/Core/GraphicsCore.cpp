@@ -332,7 +332,6 @@ void Graphics::Initialize(void)
 		ASSERT_SUCCEEDED(D3D12CreateDevice(pAdapter.Get(), D3D_FEATURE_LEVEL_11_0, MY_IID_PPV_ARGS(&pDevice)));
 		g_Device = pDevice.Detach();
 	}
-	
 
 #if _DEBUG
 	ID3D12InfoQueue* pInfoQueue = nullptr;
